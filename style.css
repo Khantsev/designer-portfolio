@@ -6,6 +6,8 @@ Bold 700
 ExtraBold 800 
 */
 
+/* General styles */
+
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
@@ -27,6 +29,10 @@ body {
 a {
   text-decoration: none;
   color: #dedede;
+  transition: opacity 0.3s;
+}
+a:hover {
+  opacity: 0.6;
 }
 
 .logo {
@@ -34,6 +40,29 @@ a {
   align-items: center;
   gap: 14px;
   font-weight: 800;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 48px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #9d9d9d;
+  border-radius: 4px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn::before {
+  content: '';
+  width: 21px;
+  height: 16px;
+  background-image: url('images/mail.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* HEADER */
@@ -55,4 +84,41 @@ a {
 .header__link {
   font-size: 18px;
   font-weight: 700;
+}
+
+/* MAIN */
+
+/* Section welcome */
+.welcome {
+  margin-top: 160px;
+}
+.welcome .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome__wrapper {
+}
+.welcome__title {
+  width: 500px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 54px;
+  line-height: 1.19;
+  font-weight: 700;
+  color: #dedede;
+}
+.welcome__text {
+  width: 395px;
+  margin-bottom: 88px;
+}
+.welcome__btn {
+}
+.welcome__img {
+  width: 400px;
+  height: 400px;
+  margin-right: 106px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
