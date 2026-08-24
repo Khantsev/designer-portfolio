@@ -156,14 +156,14 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  padding-top: 138px;
 }
 .work {
   position: relative;
   height: 888px;
 }
-.work:nth-child(even) {
-  position: relative;
-  top: 138px;
+.work:nth-child(odd) {
+  margin-top: -138px;
 }
 .work:hover {
   opacity: 1;
@@ -185,10 +185,53 @@ img {
   height: 100%;
   font-size: 40px;
   font-weight: 700;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 0.5s;
 }
 .work:hover .work__name {
   opacity: 1;
+}
+
+/* Section general-section */
+.general-section {
+  margin-top: 240px;
+}
+.general-section__title {
+  margin-bottom: 65px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #dedede;
+}
+.general-section__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.general-section__link {
+  position: relative;
+}
+.general-section__link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.general-section__link:hover::before {
+  opacity: 1;
+}
+.general-section__img {
+  display: block;
+  width: 400px;
+  height: 408px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.general-section--vertical .general-section__img {
+  height: 560px;
 }
