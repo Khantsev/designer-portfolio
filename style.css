@@ -69,6 +69,13 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+.title {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #dedede;
+}
 
 /* HEADER */
 .header {
@@ -199,10 +206,6 @@ img {
 }
 .general-section__title {
   margin-bottom: 65px;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: #dedede;
 }
 .general-section__wrapper {
   display: flex;
@@ -234,4 +237,25 @@ img {
 
 .general-section--vertical .general-section__img {
   height: 560px;
+}
+
+/* Section contact */
+.contact {
+  margin-top: 240px;
+  margin-bottom: 124px;
+}
+.contact .container {
+  max-width: 520px;
+  text-align: center;
+}
+.title {
+  margin-bottom: 24px;
+}
+.contact__title {
+}
+.contact__action {
+  margin-bottom: 48px;
+  font-size: 26px;
+}
+.btn {
 }
